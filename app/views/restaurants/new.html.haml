@@ -1,9 +1,9 @@
 .row
   .large-8.columns.large-centered
+    %h3.subheader.center
+      New Restaurantly Spots!
+.row
+  .large-8.columns.large-centered
     = form_for @restaurant do |restaurant|
       = restaurant.text_field :name, placeholder: "name, eg 'mc ruby on rails'"
       = restaurant.submit "submit!", class: "button"
-.row
-  .large-8.columns.large-centered
-    %h3.subheader.center
-      New Restaurantly Spots!
