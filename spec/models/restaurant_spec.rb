@@ -1,5 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Restaurant, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+describe Restaurant do
+    subject(:restaurant) { FactoryGirl.build(:restaurant, name: nil)}
+    it {expect(restaurant.valid?).to be_falsey}
+  end
